@@ -1,0 +1,27 @@
+### Criar Carrinho
+POST http://localhost:3000/carrinhos
+Content-Type: application/json
+
+{
+  "clienteId": 1,
+  "produtoId": 1,
+  "quantidade": 3
+}
+
+
+###
+
+### Buscar Carrinho do Cliente
+GET http://localhost:3000/carrinhos/1
+
+###
+
+### Deletar Item do Carrinho
+DELETE http://localhost:3000/carrinho/1/item/1
+
+###
+
+### Deletar Carrinho
+DELETE http://localhost:3000/carrinhos/1
+
+###

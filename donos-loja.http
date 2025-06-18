@@ -1,0 +1,38 @@
+### Criar DonoLoja
+POST http://localhost:3000/donos-loja
+Content-Type: application/json
+
+{
+  "nome": "Mariana Almeida",
+  "email":"marianaalmeida@gmail.com",
+  "cpf": "123.456.789-00",
+  "senha":"123456"
+}
+
+###
+
+### Buscar todos os Donos de Loja
+GET http://localhost:3000/donos-loja
+
+###
+
+### Buscar Dono de Loja por ID
+GET http://localhost:3000/donos-loja/1
+
+###
+
+### Atualizar Dono de Loja
+PUT http://localhost:3000/donos-loja/1
+Content-Type: application/json
+
+{
+  "nome": "Maria Alice",
+  "cpf": "987.654.321-00"
+}
+
+###
+
+### Deletar Dono de Loja
+DELETE http://localhost:3000/donos-loja/1
+
+###

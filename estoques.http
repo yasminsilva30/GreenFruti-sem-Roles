@@ -1,0 +1,36 @@
+### Criar Estoque
+POST http://localhost:3000/estoques
+Content-Type: application/json
+
+{
+  "lojaId": 1,
+  "produtoId": 1,
+  "quantidade": 100
+}
+
+###
+
+### Buscar todos os Estoques
+GET http://localhost:3000/estoques
+
+###
+
+### Buscar Estoque por ID
+GET http://localhost:3000/estoques/1
+
+###
+
+### Atualizar Estoque
+PATCH http://localhost:3000/estoques/1
+Content-Type: application/json
+
+{
+  "quantidade": 300
+}
+
+###
+
+### Deletar Estoque
+DELETE http://localhost:3000/estoques/1
+
+###

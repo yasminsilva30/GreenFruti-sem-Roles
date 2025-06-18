@@ -1,0 +1,40 @@
+### Criar Produto
+POST http://localhost:3000/produtos
+Content-Type: application/json
+
+{
+  "lojaId": 1,
+  "nome": "Mamão",
+  "preco": 9,
+  "categoria": "Fruta"
+}
+
+###
+
+### Buscar todos os produtos
+GET http://localhost:3000/produtos
+
+###
+
+### Buscar produto por ID
+GET http://localhost:3000/produtos/1
+
+###
+
+### Atualizar produto
+PUT http://localhost:3000/produtos/1
+Content-Type: application/json
+
+{
+  "nome": "Maçã Fuji",
+  "preco": 6.00,
+  "quantidadeEstoque": 15
+}
+
+###
+
+### Deletar produto
+DELETE http://localhost:3000/produtos/1
+Content-Type: application/json
+
+###

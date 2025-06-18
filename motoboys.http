@@ -1,0 +1,36 @@
+### Criar Motoboy
+POST http://localhost:3000/motoboys
+Content-Type: application/json
+
+{
+  "nome": "José Oliveira",
+  "telefone": "998877665"
+}
+
+###
+
+### Buscar todos os Motoboys
+GET http://localhost:3000/motoboys
+
+###
+
+### Buscar Motoboy por ID
+GET http://localhost:3000/motoboys/1
+
+###
+
+### Atualizar Motoboy
+PUT http://localhost:3000/motoboys/1
+Content-Type: application/json
+
+{
+  "nome": "Inácio Silva",
+  "telefone": "40028922"
+}
+
+###
+
+### Deletar Motoboy
+DELETE http://localhost:3000/motoboys/1
+
+###

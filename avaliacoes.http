@@ -1,0 +1,39 @@
+### Criar Avaliação
+POST http://localhost:3000/avaliacoes
+Content-Type: application/json
+
+{
+  "clienteId": 1,
+  "lojaId": 1,
+  "motoboyId": 1,
+  "nota": 5,
+  "comentario": "Ótimo atendimento e produtos frescos!"
+}
+
+###
+
+### Buscar todas as Avaliações
+GET http://localhost:3000/avaliacoes
+
+###
+
+### Buscar Avaliação por ID
+GET http://localhost:3000/avaliacoes/1
+
+###
+
+### Atualizar Avaliação
+PUT http://localhost:3000/avaliacoes/1
+Content-Type: application/json
+
+{
+  "nota": 4,
+  "comentario": "Bom atendimento, mas poderia melhorar a entrega"
+}
+
+###
+
+### Deletar Avaliação
+DELETE http://localhost:3000/avaliacoes/1
+
+###

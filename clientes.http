@@ -1,0 +1,38 @@
+### Criar Cliente
+POST http://localhost:3000/clientes
+Content-Type: application/json
+
+{
+  "nome": "Pedro Silva",
+  "email": "pedrosilva@google.com",
+  "telefone": "123456789"
+}
+
+###
+
+### Buscar todos os Clientes
+GET http://localhost:3000/clientes
+
+###
+
+### Buscar Cliente por ID
+GET http://localhost:3000/clientes/1
+
+###
+
+### Atualizar Cliente
+PUT http://localhost:3000/clientes/1
+Content-Type: application/json
+
+{
+  "nome": "Gabriel Barbosa da Silva",
+  "email": "gabigol@google.com",
+  "telefone": "987654321"
+}
+
+###
+
+### Deletar Cliente
+DELETE http://localhost:3000/clientes/1
+
+###

@@ -1,0 +1,38 @@
+### Criar Entrega
+POST http://localhost:3000/entregas
+Content-Type: application/json
+
+{
+  "pagamentoId": 1,
+  "motoboyId": 1,
+  "status": "Em trânsito"
+}
+
+###
+
+### Buscar todas as Entregas
+GET http://localhost:3000/entregas
+
+###
+
+### Buscar Entrega por ID
+GET http://localhost:3000/entregas/1
+
+###
+
+### Atualizar Entrega
+PUT http://localhost:3000/entregas/1
+Content-Type: application/json
+
+{
+  "status": "Entrega cancelada",
+  "motoboyId": 1,
+  "pagamentoId": 1
+}
+
+###
+
+### Deletar Entrega
+DELETE http://localhost:3000/entregas/1
+
+###

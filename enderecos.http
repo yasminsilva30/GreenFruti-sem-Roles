@@ -1,0 +1,38 @@
+### Criar Endereço
+POST http://localhost:3000/enderecos
+Content-Type: application/json
+
+{
+  "clienteId": 1,
+  "rua": "Rua das Frutas, 123",
+  "numero": "100",
+  "bairro": "Centro",
+  "cidade": "São Paulo",
+  "estado": "SP"
+}
+
+###
+
+### Buscar Endereço do Cliente
+GET http://localhost:3000/enderecos/1
+
+###
+
+### Atualizar Endereço
+PATCH http://localhost:3000/enderecos/1
+Content-Type: application/json
+
+{
+  "rua": "Rua das Frutas, 456",
+  "numero": "200",
+  "bairro": "Jardim das Flores",
+  "cidade": "São Paulo",
+  "estado": "SP"
+}
+
+###
+
+### Deletar Endereço
+DELETE http://localhost:3000/enderecos/1
+
+###

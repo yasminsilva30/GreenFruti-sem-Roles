@@ -1,0 +1,41 @@
+### Criar Loja
+POST http://localhost:3000/lojas
+Content-Type: application/json
+
+{
+  "nome": "Loja do Hortifruti",
+  "endereco": "Rua das Frutas, 123",
+  "latitude": 40.7128,
+  "longitude": -74.0060,
+  "dono-lojaId": 1
+}
+
+###
+
+### Buscar todas as Lojas
+GET http://localhost:3000/lojas
+
+###
+
+### Buscar Loja por ID
+GET http://localhost:3000/lojas/1
+
+###
+
+### Atualizar Loja
+PUT http://localhost:3000/lojas/1
+Content-Type: application/json
+
+{
+  "nome": "HortiMania",
+  "endereco": "Rua da Figueira, 321",
+  "latitude": 40.7128,
+  "longitude": -74.0060
+}
+
+###
+
+### Deletar Loja
+DELETE http://localhost:3000/lojas/1
+
+###

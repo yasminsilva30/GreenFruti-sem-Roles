@@ -1,0 +1,32 @@
+### Criar Pagamento
+POST http://localhost:3000/pagamentos
+Content-Type: application/json
+
+{
+  "carrinhoId": 1,
+  "metodo": "Cartão de Crédito",
+  "status": "Confirmado"
+}
+
+###
+
+### Buscar Pagamento pelo seu ID
+GET http://localhost:3000/pagamentos/1
+
+###
+
+### Atualizar Pagamento
+PUT http://localhost:3000/pagamentos/1
+Content-Type: application/json
+
+{
+  "metodo": "Pix",
+  "status": "Confirmado"
+}
+
+###
+
+### Deletar Pagamento
+DELETE http://localhost:3000/pagamentos/1
+
+###
